@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xvI-au-ZgP">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="176" horizontalCompressionResistancePriority="745" verticalCompressionResistancePriority="745" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="4Xi-DP-omn" userLabel="Main Stack">
+                                <rect key="frame" x="46.666666666666657" y="245.66666666666663" width="300" height="361"/>
+                                <userGuides>
+                                    <userLayoutGuide location="221" affinity="minY"/>
+                                    <userLayoutGuide location="221" affinity="minY"/>
+                                </userGuides>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twice-taste-of-love-alcohol-free-image2-061121-696x442" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-vH-o0w" userLabel="Twice">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="GgI-9Q-VXq"/>
+                                            <constraint firstAttribute="width" constant="300" id="pY0-gv-vO5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mca-V2-ytG" userLabel="Button View">
+                                        <rect key="frame" x="82.6666666666667" y="242" width="134.33333333333337" height="119"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnH-TZ-Eib">
+                                                <rect key="frame" x="0.0" y="0.0" width="134.33333333333334" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Who is Twice?"/>
+                                                <connections>
+                                                    <action selector="firstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8e-Z8-385"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3m-eK-kRJ">
+                                                <rect key="frame" x="0.0" y="42.333333333333314" width="134.33333333333334" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Popular Songs"/>
+                                                <connections>
+                                                    <action selector="secondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWA-Fk-7Km"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-n7-9IM">
+                                                <rect key="frame" x="0.0" y="84.666666666666686" width="134.33333333333334" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Recent Songs"/>
+                                                <connections>
+                                                    <action selector="thirdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1RP-Tx-UCm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mqX-vH-o0w" firstAttribute="top" secondItem="4Xi-DP-omn" secondAttribute="top" id="7Y2-yQ-j8D"/>
+                                    <constraint firstItem="mca-V2-ytG" firstAttribute="top" secondItem="mqX-vH-o0w" secondAttribute="bottom" constant="42" id="Gr3-Nt-dYp"/>
+                                    <constraint firstItem="mqX-vH-o0w" firstAttribute="centerX" secondItem="4Xi-DP-omn" secondAttribute="centerX" id="Tco-QJ-boj"/>
+                                    <constraint firstAttribute="bottom" secondItem="mqX-vH-o0w" secondAttribute="bottom" constant="161" id="a4K-Z1-rwr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Xi-DP-omn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20h-ZV-evH"/>
+                            <constraint firstItem="4Xi-DP-omn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8YZ-cl-8ql"/>
+                            <constraint firstItem="4Xi-DP-omn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sos-DL-qMT"/>
+                            <constraint firstItem="4Xi-DP-omn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdu-QC-FMJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eVU-gc-kOm"/>
+                    <connections>
+                        <segue destination="cvE-X4-ePC" kind="show" identifier="detailSegue" id="4ke-Ba-mG2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959.5419847328244" y="-27.464788732394368"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="C6B-FX-uVl">
+            <objects>
+                <viewController id="cvE-X4-ePC" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kum-nb-BTh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="87Q-XA-ZF0">
+                                <rect key="frame" x="75" y="103" width="243" height="715"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFz-zE-qJz" userLabel="Info Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="188.33333333333334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="188.33333333333334" id="gmn-wr-rWi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XD0-pB-iac">
+                                        <rect key="frame" x="0.0" y="238.33333333333329" width="243" height="476.66666666666674"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gjb-VW-6Vw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gjb-VW-6Vw" firstAttribute="bottom" secondItem="87Q-XA-ZF0" secondAttribute="bottom" id="XUl-G2-QLG"/>
+                            <constraint firstItem="87Q-XA-ZF0" firstAttribute="top" secondItem="gjb-VW-6Vw" secondAttribute="top" id="cxC-tg-Ssy"/>
+                            <constraint firstItem="87Q-XA-ZF0" firstAttribute="leading" secondItem="gjb-VW-6Vw" secondAttribute="leading" constant="75" id="s3r-PV-WPB"/>
+                            <constraint firstItem="gjb-VW-6Vw" firstAttribute="trailing" secondItem="87Q-XA-ZF0" secondAttribute="trailing" constant="75" id="uJ3-iA-sud"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tgv-3H-7XU"/>
+                    <connections>
+                        <outlet property="infoText" destination="XD0-pB-iac" id="jPl-ac-TJc"/>
+                        <outlet property="twiceImageView" destination="uFz-zE-qJz" id="2bg-EW-SSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZz-7P-fIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896.9465648854962" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MT4-oq-JHO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xvI-au-ZgP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zjz-kc-Fxs">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="COs-fg-uaX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tx-zE-CWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twice-taste-of-love-alcohol-free-image2-061121-696x442" width="696" height="442"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
